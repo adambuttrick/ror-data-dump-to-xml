@@ -25,11 +25,10 @@ python test_conversion.py -i input.json -o output.xml
 1. Repeating fields ('external_ids', 'links', 'locations', 'names', 'relationships', 'types', 'domains') are wrapped in singular-named parent elements.
 2. 'all' field: Repeats <all> tag for each value without nesting.
 3. Root element: JSON lists wrapped in {"records": {"record": [...]}}; dictionaries in {"record": {...}}.
-4. Adds XML declaration: '<?xml version="1.0" encoding="UTF-8"?>'.
-5. Recursively processes nested structures.
-6. Uses UTF-8 encoding for input/output.
-7. Outputs pretty-printed XML.
-8. No XML namespace handling.
+4. Recursively processes nested structures.
+5. Uses UTF-8 encoding for input/output.
+6. Outputs pretty-printed XML.
+7. No XML namespace handling.
 
 ## Test Logic
 
